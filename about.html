@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Alex Developer | Portfolio</title>
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">Alex<span>.dev</span></a>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">About Me</h1>
+      <p class="page-subtitle">Get to know the person behind the code</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Hello! I'm Alex, a passionate developer.</h2>
+          <p>
+            With over 3 years of experience in web development, I specialize in creating 
+            digital solutions that not only look great but also provide exceptional user experiences. 
+            My journey in tech started with curiosity and has evolved into a deep passion for 
+            crafting clean, efficient code.
+          </p>
+          <p>
+            I believe in the power of continuous learning and staying up-to-date with the latest 
+            technologies. When I'm not coding, you can find me exploring new design trends, 
+            contributing to open-source projects, or enjoying a good cup of coffee.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <i class="fas fa-code"></i>
+              <span>Clean Code Advocate</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-palette"></i>
+              <span>Design Enthusiast</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-rocket"></i>
+              <span>Performance Focused</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="assets/images/profile.jpg" alt="Alex Developer" class="profile-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline-section">
+    <div class="container">
+      <h2 class="section-title">My Journey</h2>
+      
+      <!-- Education Timeline -->
+      <div class="timeline-category">
+        <h3 class="timeline-title">
+          <i class="fas fa-graduation-cap"></i>
+          Education
+        </h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2024</div>
+            <div class="timeline-content">
+              <h4>Bachelor of Computer Science</h4>
+              <p>University of Technology</p>
+              <span class="timeline-badge">Graduated with Honors</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018 - 2020</div>
+            <div class="timeline-content">
+              <h4>Associate Degree in Web Development</h4>
+              <p>Community College</p>
+              <span class="timeline-badge">GPA: 3.8/4.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="timeline-category">
+        <h3 class="timeline-title">
+          <i class="fas fa-briefcase"></i>
+          Experience
+        </h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+              <h4>Senior Full Stack Developer</h4>
+              <p>TechCorp Solutions</p>
+              <span class="timeline-badge">Remote</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2021 - 2023</div>
+            <div class="timeline-content">
+              <h4>Frontend Developer</h4>
+              <p>Digital Agency Pro</p>
+              <span class="timeline-badge">Full-time</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2021</div>
+            <div class="timeline-content">
+              <h4>Junior Web Developer</h4>
+              <p>StartUp Inc.</p>
+              <span class="timeline-badge">Internship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates Timeline -->
+      <div class="timeline-category">
+        <h3 class="timeline-title">
+          <i class="fas fa-certificate"></i>
+          Certifications
+        </h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h4>AWS Certified Solutions Architect</h4>
+              <p>Amazon Web Services</p>
+              <span class="timeline-badge">Professional</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h4>Google Cloud Professional Developer</h4>
+              <p>Google Cloud Platform</p>
+              <span class="timeline-badge">Professional</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h4>React Developer Certification</h4>
+              <p>Meta (Facebook)</p>
+              <span class="timeline-badge">Verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

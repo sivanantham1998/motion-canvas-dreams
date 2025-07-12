@@ -1,73 +1,141 @@
-# Welcome to your Lovable project
 
-## Project info
+# Alex Developer Portfolio
 
-**URL**: https://lovable.dev/projects/a26d94b3-679e-4fe2-9f3f-5dfbe2bfaca5
+A modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScript featuring 3D animations, interactive particles, and smooth transitions.
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- **3D Animated Developer Icon** - Interactive Three.js scene with developer-themed objects
+- **Particle Background** - Dynamic particle system using Particles.js
+- **Responsive Design** - Fully responsive across all devices
+- **Smooth Animations** - GSAP-powered animations and transitions
+- **Interactive Elements** - Hover effects, button animations, and scroll triggers
+- **Modern UI/UX** - Clean, white-based design with professional aesthetics
+- **Contact Form** - Functional contact form with validation
+- **Project Showcase** - Filterable project gallery
+- **Skills Visualization** - Animated progress bars and skill categories
+- **Timeline Layout** - Professional experience and education timeline
 
-**Use Lovable**
+## 🚀 Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a26d94b3-679e-4fe2-9f3f-5dfbe2bfaca5) and start prompting.
+- **HTML5** - Semantic markup and structure
+- **CSS3** - Modern styling with Flexbox/Grid, animations, and responsive design
+- **Vanilla JavaScript** - Interactive functionality and DOM manipulation
+- **Three.js** - 3D graphics and animations
+- **Particles.js** - Interactive particle background
+- **GSAP** - Advanced animations and scroll triggers
+- **Font Awesome** - Icon library
+- **Google Fonts** - Typography (Inter font family)
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📁 Project Structure
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+portfolio/
+│
+├── index.html          # Homepage with hero section
+├── about.html          # About page with timeline
+├── projects.html       # Projects showcase
+├── skills.html         # Skills and technologies
+├── contact.html        # Contact form and info
+│
+├── css/
+│   └── style.css       # Main stylesheet
+│
+├── js/
+│   ├── main.js         # Main JavaScript functionality
+│   ├── particles-config.js  # Particles.js configuration
+│   └── three-setup.js  # Three.js 3D scene setup
+│
+├── assets/
+│   ├── resume.pdf      # Downloadable resume
+│   └── images/         # Project and profile images
+│
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Design Features
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Color Palette**: Professional blue (#007bff) with white/gray accents
+- **Typography**: Inter font family for modern readability
+- **Animations**: Smooth fade-ins, scale effects, and hover transitions
+- **Responsive**: Mobile-first approach with breakpoints at 768px and 480px
+- **Interactive**: Hover effects, click animations, and scroll triggers
 
-**Use GitHub Codespaces**
+## 📱 Pages Overview
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 🏠 Homepage (index.html)
+- Hero section with 3D developer icon
+- Particle background animation
+- Call-to-action buttons
+- Animated statistics counter
 
-## What technologies are used for this project?
+### 👤 About (about.html)
+- Professional bio and highlights
+- Education timeline
+- Experience timeline
+- Certifications timeline
 
-This project is built with:
+### 💼 Projects (projects.html)
+- Filterable project gallery
+- Project cards with hover effects
+- Technology tags
+- External links to live demos/GitHub
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 🛠️ Skills (skills.html)
+- Categorized skill sets (Frontend, Backend, Tools)
+- Animated progress bars
+- Technology icons
+- Proficiency percentages
 
-## How can I deploy this project?
+### 📧 Contact (contact.html)
+- Contact form with validation
+- Social media links
+- Contact information
+- Form submission feedback
 
-Simply open [Lovable](https://lovable.dev/projects/a26d94b3-679e-4fe2-9f3f-5dfbe2bfaca5) and click on Share -> Publish.
+## 🚀 Getting Started
 
-## Can I connect a custom domain to my Lovable project?
+1. **Clone or download** the project files
+2. **Open index.html** in your web browser
+3. **Navigate** through the different pages using the navigation menu
 
-Yes, you can!
+## 📊 Performance Features
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Optimized animations** using CSS transforms and GSAP
+- **Lazy loading** for smooth scroll performance
+- **Responsive images** and optimized assets
+- **Clean code structure** for maintainability
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🎯 Browser Support
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Mobile browsers
+
+## 📝 Customization
+
+To customize this portfolio for your own use:
+
+1. **Update content** in HTML files with your information
+2. **Replace images** in the assets/images/ folder
+3. **Modify colors** in CSS variables
+4. **Update contact information** in contact.html
+5. **Replace resume.pdf** with your own resume
+
+## 🔧 Development Notes
+
+- All animations are performance-optimized
+- Code is well-commented for easy maintenance
+- Responsive design follows mobile-first principles
+- Form validation is client-side (server integration ready)
+- Three.js scene is optimized for smooth performance
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+**Built with ❤️ using vanilla web technologies**

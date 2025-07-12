@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Alex Developer | Portfolio</title>
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">Alex<span>.dev</span></a>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">My Projects</h1>
+      <p class="page-subtitle">A showcase of my recent work and achievements</p>
+    </div>
+  </section>
+
+  <!-- Project Filter -->
+  <section class="project-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/project1.jpg" alt="E-Commerce Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-description">
+              A full-stack e-commerce solution with React, Node.js, and MongoDB. 
+              Features include user authentication, payment integration, and admin dashboard.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/project2.jpg" alt="Task Management App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Task Management App</h3>
+            <p class="project-description">
+              A collaborative task management application with real-time updates, 
+              drag-and-drop functionality, and team collaboration features.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <img src="assets/images/project3.jpg" alt="Fitness Tracker">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Fitness Tracker Mobile App</h3>
+            <p class="project-description">
+              Cross-platform mobile app for tracking workouts, nutrition, and progress. 
+              Includes social features and personalized workout plans.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">Chart.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="design">
+          <div class="project-image">
+            <img src="assets/images/project4.jpg" alt="Brand Identity">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-behance"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Brand Identity Design</h3>
+            <p class="project-description">
+              Complete brand identity package including logo design, color palette, 
+              typography, and brand guidelines for a tech startup.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Illustrator</span>
+              <span class="tech-tag">Photoshop</span>
+              <span class="tech-tag">InDesign</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/project5.jpg" alt="Weather Dashboard">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Weather Dashboard</h3>
+            <p class="project-description">
+              Interactive weather dashboard with beautiful animations, forecasts, 
+              and location-based weather data visualization.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">D3.js</span>
+              <span class="tech-tag">Weather API</span>
+              <span class="tech-tag">CSS Grid</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <img src="assets/images/project6.jpg" alt="Recipe App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Recipe Discovery App</h3>
+            <p class="project-description">
+              Mobile app for discovering and saving recipes with ingredient scanning, 
+              meal planning, and shopping list generation features.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Camera API</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
