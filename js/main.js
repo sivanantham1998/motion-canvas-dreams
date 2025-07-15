@@ -185,6 +185,7 @@ function initSkills() {
 }
 
 // ===== CONTACT FORM =====
+ emailjs.init("tvyYkl0WN0N_ev0nn")
 function initContact() {
     const contactForm = document.getElementById('contact-form');
     
@@ -217,6 +218,11 @@ function handleFormSubmit(e) {
     });
     
     if (isValid) {
+        emailjs.sendForm('service_cwlbffg',"template_ek4ve7l",form).then((s)=>{
+            console.log(s)
+        }).catch((Err)=>{
+            console.log(Err)
+        })
         // Simulate form submission
         showMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
         form.reset();
@@ -228,7 +234,7 @@ function handleFormSubmit(e) {
         const subject = formData.get('subject');
         const message = formData.get('message');
         
-        const mailtoLink = `mailto:alex.developer@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+        const mailtoLink = `mailto:curlysiva@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
         
         // Optional: Open mail client
         // window.location.href = mailtoLink;
