@@ -1,281 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects - Sivanantham | Portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Sivanantham | Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/profile.jpeg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      defer
-    ></script>
-    <script src="js/main.js" defer></script>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <a href="index.html">Sivanantham <span>.S</span></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">Sivanantham <span>.S</span></a>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">My Projects</h1>
+      <p class="page-subtitle">
+        A showcase of my recent work and achievements
+      </p>
+    </div>
+  </section>
+
+  <!-- Project Filter -->
+  <section class="project-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">
+          All Projects
+        </button>
+        <button class="filter-btn" data-filter="web">Web Application</button>
+        <button class="filter-btn" data-filter="data">Data Analyst</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <!-- Project -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/ecommerce.webp" alt="E-Commerce Platform" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">SegolConnect (CRM project)</h3>
+            <p class="project-description">
+              I contributed to building SegolConnect, a CRM and workflow-automation platform that streamlines lead
+              management, customer communication, and daily operations. My work included reusable React components,
+              optimized MongoDB structures, and API integrations that boosted speed, scalability, and team productivity.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Razorpay</span>
+              <span class="tech-tag">Git</span>
+            </div>
+          </div>
         </div>
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="projects.html" class="nav-link active">Projects</a>
-          <a href="skills.html" class="nav-link">Skills</a>
-          <a href="contact.html" class="nav-link">Contact</a>
+        <!-- Project 1 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/ecommerce.webp" alt="E-Commerce Platform" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://segolsys-e-commerce.netlify.app/" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-description">
+              A full-stack e-commerce platform built with React, Node.js, and MongoDB, featuring secure authentication,
+              smooth payment integration, and a powerful admin dashboard.
+              Designed with a fully responsive UI and user-friendly workflows for a seamless shopping experience.
+              Built on scalable architecture to ensure high performance across all devices and user loads.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">Netlify(Frontend hosting)</span>
+              <span class="tech-tag">Render(Backend hosting)</span>
+            </div>
+          </div>
         </div>
-        <div class="nav-toggle" id="nav-toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/Expenses.jpg" alt="Task Management App" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://expenses-tracker-siva.netlify.app/" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Expenses Tracker App</h3>
+            <p class="project-description">
+              A collaborative expense-tracking app with real-time updates, featuring team collaboration.
+              Built with secure user authentication using the bcrypt.js library and cookies for safe session handling.
+              Designed to make shared expense management easier with precision and real-time tracking.
+              Optimized for seamless multi-user interaction and a smooth, intuitive user experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/jobportal.webp" alt="Fitness Tracker" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://job-portal-project-sivanantham.netlify.app/" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Job portal</h3>
+            <p class="project-description">
+              A web-based application for job searching, where employer and employee logins and registration are kept
+              separate.
+              Built as a dynamic platform where registered users can log in at any time to either browse or manage job
+              opportunities.
+              Currently in the initial development phase, with core features and workflows being structured.
+              It is also planned that this project will integrate well with the already existing CRM system for
+              integrated data management.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/weather.jpg" alt="Brand Identity" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://weatherapp-by-sivanantham.netlify.app/" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-description">
+              Complete Weather app to check the current weather.A React
+              Weather App fetches real-time weather data using an API ,
+              displays conditions like temperature, humidity, and wind speed.
+              It uses React state and hooks to manage data and user input.
+              Styling and icons enhance the UI for a dynamic user experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React js</span>
+              <span class="tech-tag">Open Weather API</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="data">
+          <div class="project-image">
+            <img src="assets/images/ipl.png" alt="Weather Dashboard" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/sivanantham1998/Ipl_prediction_powerBI_dashboard.git" class="project-link"
+                  target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">
+              IPL Prediction Data Analyst Dashboard
+            </h3>
+            <p class="project-description">
+              Interactive Power BI dashboard ,Analyzed IPL datasets
+              (2008-2024) using Power BI, python and creating interactive
+              visualizations for player performance, and team performance.
+              Built custom dashboards for strategic insights and data driven
+              decision-making.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">My SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="data">
+          <div class="project-image">
+            <img src="assets/images/blinkit.png" alt="Recipe App" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/sivanantham1998/BlinkIt_powerBI_dashboard.git" class="project-link"
+                  target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Blinkit Sales Dashboard</h3>
+            <p class="project-description">
+              BlinkIT Sales Data analysis using Power-BI, which can contain
+              overall sales and performance of these current years. Built
+              interactive dashboard for visualization of the over sales that
+              regard the outlet size , outlet area and data’s that are driven
+              to make decision-making.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Python libraies (pandas, numpy)</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
+</body>
 
-    <!-- Projects Hero -->
-    <section class="page-hero">
-      <div class="container">
-        <h1 class="page-title">My Projects</h1>
-        <p class="page-subtitle">
-          A showcase of my recent work and achievements
-        </p>
-      </div>
-    </section>
-
-    <!-- Project Filter -->
-    <section class="project-filter">
-      <div class="container">
-        <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all">
-            All Projects
-          </button>
-          <button class="filter-btn" data-filter="web">Web Application</button>
-          <button class="filter-btn" data-filter="data">Data Analyst</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Grid -->
-    <section class="projects-section">
-      <div class="container">
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card" data-category="web">
-            <div class="project-image">
-              <img
-                src="assets/images/ecommerce.webp"
-                alt="E-Commerce Platform"
-              />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="https://segolsys-e-commerce.netlify.app/"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">E-Commerce Platform</h3>
-              <p class="project-description">
-                A full-stack e-commerce solution with React, Node.js, and
-                MongoDB. Features include user authentication, payment
-                integration, and admin dashboard.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Stripe</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card" data-category="web">
-            <div class="project-image">
-              <img src="assets/images/Expenses.jpg" alt="Task Management App" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="https://expenses-tracker-siva.netlify.app/"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Expenses Tracker App</h3>
-              <p class="project-description">
-                A collaborative expenses tracker application with real-time
-                updates, and team collaboration features and user
-                aunthentication using bcrytjs library and cookies.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node js</span>
-                <span class="tech-tag">Express</span>
-                <span class="tech-tag">Mongodb</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card" data-category="web">
-            <div class="project-image">
-              <img src="assets/images/jobportal.webp" alt="Fitness Tracker" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="https://job-portal-project-sivanantham.netlify.app/"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Job portal</h3>
-              <p class="project-description">
-                A web app for Searching jobs. Separate login and register form
-                for employers and employee. Dynamic web site for the user who
-                are looking for job onces they registered whenever they can
-                login and use.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node js</span>
-                <span class="tech-tag">Mongodb</span>
-                <span class="tech-tag">Express</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-card" data-category="web">
-            <div class="project-image">
-              <img src="assets/images/weather.jpg" alt="Brand Identity" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="https://weatherapp-by-sivanantham.netlify.app/"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Weather App</h3>
-              <p class="project-description">
-                Complete Weather app to check the current weather.A React
-                Weather App fetches real-time weather data using an API ,
-                displays conditions like temperature, humidity, and wind speed.
-                It uses React state and hooks to manage data and user input.
-                Styling and icons enhance the UI for a dynamic user experience.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React js</span>
-                <span class="tech-tag">Open Weather API</span>
-                <span class="tech-tag">Bootstrap</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="project-card" data-category="data">
-            <div class="project-image">
-              <img src="assets/images/ipl.png" alt="Weather Dashboard" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="https://github.com/sivanantham1998/Ipl_prediction_powerBI_dashboard.git"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">
-                IPL Prediction Data Analyst Dashboard
-              </h3>
-              <p class="project-description">
-                Interactive Power BI dashboard ,Analyzed IPL datasets
-                (2008-2024) using Power BI, python and creating interactive
-                visualizations for player performance, and team performance.
-                Built custom dashboards for strategic insights and data driven
-                decision-making.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Power BI</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">My SQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6 -->
-          <div class="project-card" data-category="data">
-            <div class="project-image">
-              <img src="assets/images/blinkit.png" alt="Recipe App" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="https://github.com/sivanantham1998/BlinkIt_powerBI_dashboard.git"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Blinkit Sales Dashboard</h3>
-              <p class="project-description">
-                BlinkIT Sales Data analysis using Power-BI, which can contain
-                overall sales and performance of these current years. Built
-                interactive dashboard for visualization of the over sales that
-                regard the outlet size , outlet area and data’s that are driven
-                to make decision-making.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Power BI</span>
-                <span class="tech-tag">Python libraies (pandas, numpy)</span>
-                <span class="tech-tag">MySQL</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
 </html>
