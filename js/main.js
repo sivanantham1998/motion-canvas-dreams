@@ -228,7 +228,7 @@ function handleFormSubmit(e) {
         const subject = formData.get('subject');
         const message = formData.get('message');
         
-        const mailtoLink = `mailto:alex.developer@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+        const mailtoLink = `mailto:curlysiva@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
         
         // Optional: Open mail client
         // window.location.href = mailtoLink;
